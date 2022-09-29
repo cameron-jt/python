@@ -1,0 +1,16 @@
+def binary(N):
+    rev_bin = []
+    str_bin = ''
+    while (N>0): 
+        rem = N%2
+        rev_bin.append(rem)
+        N = N//2
+        
+    rev_bin.reverse()
+    
+    for num in rev_bin:
+        str_bin += str(num)
+        
+    return str_bin
+
+print(binary(5))
