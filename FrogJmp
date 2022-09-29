@@ -1,8 +1,3 @@
 def solution(X, Y, D):
-    diff = Y-X
-    rem = diff%D
-    if rem == 0:
-        return diff/D
-    else:
-        num = diff//D
-        return num + 1
+    n = int((Y-X)/D) + ((Y-X)%D > 0)
+    return n
